@@ -1,0 +1,27 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Empleado</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header">
+                <h2>Detalles del Empleado</h2>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{ empleado.nombre }} {{ empleado.apellido }}</h5>
+                <p class="card-text">
+                    <strong>Puesto:</strong> {{ empleado.puesto }}<br>
+                    <strong>Email:</strong> {{ empleado.email }}<br>
+                    <strong>Teléfono:</strong> {{ empleado.telefono|default:"No proporcionado" }}<br>
+                    <strong>Dirección:</strong> {{ empleado.direccion|default:"No proporcionada" }}
+                </p>
+                <a href="{% url 'ListaEmpleado' %}" class="btn btn-primary">Volver a la lista de empleado</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

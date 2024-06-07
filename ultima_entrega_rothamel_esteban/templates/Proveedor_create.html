@@ -1,0 +1,44 @@
+<html lang="es">
+<head>
+    {% load static %} 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Proveedor</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    <style>
+        .form-group {
+            margin-bottom: 1.5rem; /* Espacio entre los campos */
+        }
+        .form-group p {
+            display: block; /* Cambia a bloque para alinearlo verticalmente */
+            width: 100%; 
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%; /* Asegura que los campos ocupen todo el ancho */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Formulario de Proveedor</h2>
+        
+        <form method="POST" class="shadow p-4 rounded bg-light">
+            {% csrf_token %}
+            <div class="form-group">
+                {{ form.as_p }}
+            </div>
+            <button type="submit" class="btn btn-primary btn-block mt-3 custom-btn" style="color: black">Enviar</button>
+        </form>
+    </div>
+    
+    <!-- Incluir Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

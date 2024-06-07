@@ -1,0 +1,30 @@
+{% extends "C:\Users\Usuario\Desktop\curso_python_clases\entregas\ProyectoFInalRothamel\ultima_entrega_rothamel_esteban\templates\Padre.html"%}		
+
+
+{% block contenidoQueCambia %}
+
+<div class="container">
+    <h1>Resultados de búsqueda</h1>
+    <form method="get" action="{% url 'buscar' %}">
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">buscar</button>
+    </form>
+    <h2>Resultados</h2>
+    <ul>
+        {% for result in results %}
+            <li>
+                <h3>{{ result.nombre }}</h3>
+                <p><strong>Apellido:</strong> {{ result.apellido }}</p>
+                <p><strong>Nombre:</strong> {{ result.nombre }}</p>
+                <p><strong>Email:</strong> {{ result.email }}</p>
+                <p><strong>Telefono:</strong> {{ result.telefono }}</p>
+                <p><strong>Direccion:</strong> {{ result.direccion }}</p>
+            </li>
+        {% empty %}
+            <li>No se encontraron resultados.</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
+
+{%load static%}

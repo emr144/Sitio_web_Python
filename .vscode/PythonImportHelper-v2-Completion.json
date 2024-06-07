@@ -1,0 +1,839 @@
+[
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "inicio",
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "isExtraImport": true,
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "cliente",
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "isExtraImport": true,
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "empleado",
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "isExtraImport": true,
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "proveedor",
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "isExtraImport": true,
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "ClienteList",
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "isExtraImport": true,
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "ClienteDetail",
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "isExtraImport": true,
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "ClienteCreate",
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "isExtraImport": true,
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "ClienteUpdate",
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "isExtraImport": true,
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "ClienteDelete",
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "isExtraImport": true,
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "EmpleadoList",
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "isExtraImport": true,
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "EmpleadoDetail",
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "isExtraImport": true,
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "EmpleadoCreate",
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "isExtraImport": true,
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "EmpleadoUpdate",
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "isExtraImport": true,
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "EmpleadoDelete",
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "isExtraImport": true,
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "ProveedorList",
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "isExtraImport": true,
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "ProveedorDetail",
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "isExtraImport": true,
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "ProveedorCreate",
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "isExtraImport": true,
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "ProveedorUpdate",
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "isExtraImport": true,
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "ProveedorDelete",
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "isExtraImport": true,
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "buscar",
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "isExtraImport": true,
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "ListView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
+        "isExtraImport": true,
+        "detail": "django.views.generic",
+        "documentation": {}
+    },
+    {
+        "label": "DetailView",
+        "importPath": "django.views.generic.detail",
+        "description": "django.views.generic.detail",
+        "isExtraImport": true,
+        "detail": "django.views.generic.detail",
+        "documentation": {}
+    },
+    {
+        "label": "DeleteView",
+        "importPath": "django.views.generic.edit",
+        "description": "django.views.generic.edit",
+        "isExtraImport": true,
+        "detail": "django.views.generic.edit",
+        "documentation": {}
+    },
+    {
+        "label": "UpdateView",
+        "importPath": "django.views.generic.edit",
+        "description": "django.views.generic.edit",
+        "isExtraImport": true,
+        "detail": "django.views.generic.edit",
+        "documentation": {}
+    },
+    {
+        "label": "CreateView",
+        "importPath": "django.views.generic.edit",
+        "description": "django.views.generic.edit",
+        "isExtraImport": true,
+        "detail": "django.views.generic.edit",
+        "documentation": {}
+    },
+    {
+        "label": "csrf_protect",
+        "importPath": "django.views.decorators.csrf",
+        "description": "django.views.decorators.csrf",
+        "isExtraImport": true,
+        "detail": "django.views.decorators.csrf",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "get_asgi_application",
+        "importPath": "django.core.asgi",
+        "description": "django.core.asgi",
+        "isExtraImport": true,
+        "detail": "django.core.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "get_wsgi_application",
+        "importPath": "django.core.wsgi",
+        "description": "django.core.wsgi",
+        "isExtraImport": true,
+        "detail": "django.core.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "AppProyectoFinal.migrations.0001_initial",
+        "description": "AppProyectoFinal.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ClienteCla',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('nombre', models.CharField(max_length=100)),",
+        "detail": "AppProyectoFinal.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "AppproyectofinalConfig",
+        "kind": 6,
+        "importPath": "AppProyectoFinal.apps",
+        "description": "AppProyectoFinal.apps",
+        "peekOfCode": "class AppproyectofinalConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'AppProyectoFinal'",
+        "detail": "AppProyectoFinal.apps",
+        "documentation": {}
+    },
+    {
+        "label": "ClienteForm",
+        "kind": 6,
+        "importPath": "AppProyectoFinal.form",
+        "description": "AppProyectoFinal.form",
+        "peekOfCode": "class ClienteForm(forms.ModelForm):\n     class Meta:\n          model=ClienteCla\n          fields=[\"nombre\",\"apellido\",\"email\",\"telefono\",\"direccion\"]\nclass EmpleadoForm(forms.ModelForm):\n     class Meta:\n          model=EmpleadoCla\n          fields=[\"nombre\",\"apellido\",\"email\",\"telefono\",\"puesto\"]\nclass ProveedorForm(forms.ModelForm):\n     class Meta:",
+        "detail": "AppProyectoFinal.form",
+        "documentation": {}
+    },
+    {
+        "label": "EmpleadoForm",
+        "kind": 6,
+        "importPath": "AppProyectoFinal.form",
+        "description": "AppProyectoFinal.form",
+        "peekOfCode": "class EmpleadoForm(forms.ModelForm):\n     class Meta:\n          model=EmpleadoCla\n          fields=[\"nombre\",\"apellido\",\"email\",\"telefono\",\"puesto\"]\nclass ProveedorForm(forms.ModelForm):\n     class Meta:\n          model=ProveedorCla\n          fields=[\"nombre\",\"email\",\"telefono\",\"rubro\",\"direccion\"]\nclass Buscar(forms.Form):\n    query = forms.CharField(label='Buscar', max_length=100)",
+        "detail": "AppProyectoFinal.form",
+        "documentation": {}
+    },
+    {
+        "label": "ProveedorForm",
+        "kind": 6,
+        "importPath": "AppProyectoFinal.form",
+        "description": "AppProyectoFinal.form",
+        "peekOfCode": "class ProveedorForm(forms.ModelForm):\n     class Meta:\n          model=ProveedorCla\n          fields=[\"nombre\",\"email\",\"telefono\",\"rubro\",\"direccion\"]\nclass Buscar(forms.Form):\n    query = forms.CharField(label='Buscar', max_length=100)\n    category = forms.ChoiceField(choices=[\n        ('clientes', 'Clientes'),\n        ('empleados', 'Empleados'),\n        ('proveedores', 'Proveedores')",
+        "detail": "AppProyectoFinal.form",
+        "documentation": {}
+    },
+    {
+        "label": "Buscar",
+        "kind": 6,
+        "importPath": "AppProyectoFinal.form",
+        "description": "AppProyectoFinal.form",
+        "peekOfCode": "class Buscar(forms.Form):\n    query = forms.CharField(label='Buscar', max_length=100)\n    category = forms.ChoiceField(choices=[\n        ('clientes', 'Clientes'),\n        ('empleados', 'Empleados'),\n        ('proveedores', 'Proveedores')\n    ])",
+        "detail": "AppProyectoFinal.form",
+        "documentation": {}
+    },
+    {
+        "label": "ClienteCla",
+        "kind": 6,
+        "importPath": "AppProyectoFinal.models",
+        "description": "AppProyectoFinal.models",
+        "peekOfCode": "class ClienteCla(models.Model):\n    nombre = models.CharField(max_length=100)\n    apellido = models.CharField(max_length=100)\n    email = models.EmailField(unique=True)\n    telefono = models.CharField(max_length=15, blank=True)\n    direccion = models.TextField(blank=True)\n    def __str__(self):\n        return f'{self.nombre} {self.apellido}'\nclass EmpleadoCla(models.Model):\n    nombre = models.CharField(max_length=100)",
+        "detail": "AppProyectoFinal.models",
+        "documentation": {}
+    },
+    {
+        "label": "EmpleadoCla",
+        "kind": 6,
+        "importPath": "AppProyectoFinal.models",
+        "description": "AppProyectoFinal.models",
+        "peekOfCode": "class EmpleadoCla(models.Model):\n    nombre = models.CharField(max_length=100)\n    apellido = models.CharField(max_length=100)\n    email = models.EmailField(unique=True)\n    telefono = models.CharField(max_length=15, blank=True)\n    puesto = models.CharField(max_length=100)\n    def __str__(self):\n        return f'{self.nombre} {self.apellido} - {self.puesto}'\nclass ProveedorCla(models.Model):\n    nombre = models.CharField(max_length=100)",
+        "detail": "AppProyectoFinal.models",
+        "documentation": {}
+    },
+    {
+        "label": "ProveedorCla",
+        "kind": 6,
+        "importPath": "AppProyectoFinal.models",
+        "description": "AppProyectoFinal.models",
+        "peekOfCode": "class ProveedorCla(models.Model):\n    nombre = models.CharField(max_length=100)\n    email = models.EmailField(unique=True)\n    telefono = models.CharField(max_length=15, blank=True)\n    direccion = models.TextField(max_length=100)\n    rubro = models.CharField(max_length=100)\n    def __str__(self):\n        return self.nombre",
+        "detail": "AppProyectoFinal.models",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "AppProyectoFinal.urls",
+        "description": "AppProyectoFinal.urls",
+        "peekOfCode": "urlpatterns = [\n    path('AppProyectoFinal/inicio/', inicio,name=\"inicio\"),\n    path('AppProyectoFinal/cliente/', cliente,name=\"cliente\"),\n    path('AppProyectoFinal/empleado/', empleado,name=\"empleado\"),\n    path('AppProyectoFinal/proveedor/', proveedor,name=\"proveedor\"),\n    path('buscar/', buscar, name='buscar'),\n    path('cliente_lista/', ClienteList.as_view(), name='ListaCliente'),\n    path('cliente-detalle/<pk>/', ClienteDetail.as_view(), name='DetalleCliente'),\n    path('cliente-crea/', ClienteCreate.as_view(), name='CreaCliente'),\n    path('cliente-actualiza/<pk>/', ClienteUpdate.as_view(), name='ActualizaCliente'),",
+        "detail": "AppProyectoFinal.urls",
+        "documentation": {}
+    },
+    {
+        "label": "ClienteList",
+        "kind": 6,
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "peekOfCode": "class ClienteList(ListView):\n    model = ClienteCla\n    template_name = \"Cliente_list.html\"\n    context_object_name=\"clientes\"\nclass ClienteDetail(DetailView):\n    model = ClienteCla\n    template_name = \"Cliente_detail.html\"\n    context_object_name=\"clientes\"\nclass ClienteCreate(CreateView):\n    model=ClienteCla",
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "ClienteDetail",
+        "kind": 6,
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "peekOfCode": "class ClienteDetail(DetailView):\n    model = ClienteCla\n    template_name = \"Cliente_detail.html\"\n    context_object_name=\"clientes\"\nclass ClienteCreate(CreateView):\n    model=ClienteCla\n    template_name=\"Cliente_create.html\"\n    fields=[\"nombre\",\"apellido\",\"telefono\",\"direccion\",\"email\"]\n    success_url=reverse_lazy('ListaCliente')\nclass ClienteUpdate(UpdateView):",
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "ClienteCreate",
+        "kind": 6,
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "peekOfCode": "class ClienteCreate(CreateView):\n    model=ClienteCla\n    template_name=\"Cliente_create.html\"\n    fields=[\"nombre\",\"apellido\",\"telefono\",\"direccion\",\"email\"]\n    success_url=reverse_lazy('ListaCliente')\nclass ClienteUpdate(UpdateView):\n    model=ClienteCla\n    template_name=\"Cliente_update.html\"\n    fields=(\"__all__\")\n    success_url=reverse_lazy('ListaCliente')",
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "ClienteUpdate",
+        "kind": 6,
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "peekOfCode": "class ClienteUpdate(UpdateView):\n    model=ClienteCla\n    template_name=\"Cliente_update.html\"\n    fields=(\"__all__\")\n    success_url=reverse_lazy('ListaCliente')\n    context_object_name=\"clientes\"\nclass ClienteDelete(DeleteView):\n    model=ClienteCla\n    template_name=\"Cliente_delete.html\"\n    success_url=reverse_lazy('ListaCliente')",
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "ClienteDelete",
+        "kind": 6,
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "peekOfCode": "class ClienteDelete(DeleteView):\n    model=ClienteCla\n    template_name=\"Cliente_delete.html\"\n    success_url=reverse_lazy('ListaCliente')\n#Empleado\nclass EmpleadoList(ListView):\n    model = EmpleadoCla\n    template_name = \"Empleado_list.html\"\n    context_object_name=\"empleados\"\nclass EmpleadoDetail(DetailView):",
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "EmpleadoList",
+        "kind": 6,
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "peekOfCode": "class EmpleadoList(ListView):\n    model = EmpleadoCla\n    template_name = \"Empleado_list.html\"\n    context_object_name=\"empleados\"\nclass EmpleadoDetail(DetailView):\n    model = EmpleadoCla\n    template_name = \"Empleado_detail.html\"\n    context_object_name=\"empleado\"\nclass EmpleadoCreate(CreateView):\n    model=EmpleadoCla",
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "EmpleadoDetail",
+        "kind": 6,
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "peekOfCode": "class EmpleadoDetail(DetailView):\n    model = EmpleadoCla\n    template_name = \"Empleado_detail.html\"\n    context_object_name=\"empleado\"\nclass EmpleadoCreate(CreateView):\n    model=EmpleadoCla\n    template_name=\"Empleado_create.html\"\n    fields=[\"nombre\",\"apellido\",\"telefono\",\"puesto\",\"email\"]\n    success_url=reverse_lazy('ListaEmpleado')\nclass EmpleadoUpdate(UpdateView):",
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "EmpleadoCreate",
+        "kind": 6,
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "peekOfCode": "class EmpleadoCreate(CreateView):\n    model=EmpleadoCla\n    template_name=\"Empleado_create.html\"\n    fields=[\"nombre\",\"apellido\",\"telefono\",\"puesto\",\"email\"]\n    success_url=reverse_lazy('ListaEmpleado')\nclass EmpleadoUpdate(UpdateView):\n    model=EmpleadoCla\n    template_name=\"Empleado_update.html\"\n    fields=(\"__all__\")\n    success_url=reverse_lazy('ListaEmpleado')",
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "EmpleadoUpdate",
+        "kind": 6,
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "peekOfCode": "class EmpleadoUpdate(UpdateView):\n    model=EmpleadoCla\n    template_name=\"Empleado_update.html\"\n    fields=(\"__all__\")\n    success_url=reverse_lazy('ListaEmpleado')\n    context_object_name=\"empleados\"\nclass EmpleadoDelete(DeleteView):\n    model=EmpleadoCla\n    template_name=\"Empleado_delete.html\"\n    success_url=reverse_lazy('ListaEmpleado')",
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "EmpleadoDelete",
+        "kind": 6,
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "peekOfCode": "class EmpleadoDelete(DeleteView):\n    model=EmpleadoCla\n    template_name=\"Empleado_delete.html\"\n    success_url=reverse_lazy('ListaEmpleado')\n#Proveedor\nclass ProveedorList(ListView):\n    model = ProveedorCla\n    template_name = \"Proveedor_list.html\"\n    context_object_name=\"proveedores\"\nclass ProveedorDetail(DetailView):",
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "ProveedorList",
+        "kind": 6,
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "peekOfCode": "class ProveedorList(ListView):\n    model = ProveedorCla\n    template_name = \"Proveedor_list.html\"\n    context_object_name=\"proveedores\"\nclass ProveedorDetail(DetailView):\n    model = ProveedorCla\n    template_name = \"Proveedor_detail.html\"\n    context_object_name=\"proveedor\"\nclass ProveedorCreate(CreateView):\n    model=ProveedorCla",
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "ProveedorDetail",
+        "kind": 6,
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "peekOfCode": "class ProveedorDetail(DetailView):\n    model = ProveedorCla\n    template_name = \"Proveedor_detail.html\"\n    context_object_name=\"proveedor\"\nclass ProveedorCreate(CreateView):\n    model=ProveedorCla\n    template_name=\"Proveedor_create.html\"\n    fields=[\"nombre\",\"rubro\",\"telefono\",\"direccion\",\"email\"]\n    success_url=reverse_lazy('ListaProveedor')\nclass ProveedorUpdate(UpdateView):",
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "ProveedorCreate",
+        "kind": 6,
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "peekOfCode": "class ProveedorCreate(CreateView):\n    model=ProveedorCla\n    template_name=\"Proveedor_create.html\"\n    fields=[\"nombre\",\"rubro\",\"telefono\",\"direccion\",\"email\"]\n    success_url=reverse_lazy('ListaProveedor')\nclass ProveedorUpdate(UpdateView):\n    model=ProveedorCla\n    template_name=\"Proveedor_update.html\"\n    fields=(\"__all__\")\n    success_url=reverse_lazy('ListaProveedor')",
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "ProveedorUpdate",
+        "kind": 6,
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "peekOfCode": "class ProveedorUpdate(UpdateView):\n    model=ProveedorCla\n    template_name=\"Proveedor_update.html\"\n    fields=(\"__all__\")\n    success_url=reverse_lazy('ListaProveedor')\n    context_object_name=\"proveedores\"\nclass ProveedorDelete(DeleteView):\n    model=ProveedorCla\n    template_name=\"Proveedor_delete.html\"\n    success_url=reverse_lazy('ListaProveedor')",
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "ProveedorDelete",
+        "kind": 6,
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "peekOfCode": "class ProveedorDelete(DeleteView):\n    model=ProveedorCla\n    template_name=\"Proveedor_delete.html\"\n    success_url=reverse_lazy('ListaProveedor')",
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "inicio",
+        "kind": 2,
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "peekOfCode": "def inicio(req):\n     form = Buscar() \n     return render  (req,\"Inicio.html\",{'form': form})\ndef cliente(req):\n     cliente=ClienteCla.objects.all()\n     return render  (req,\"Clientes.html\",{\"cliente\":cliente})\ndef empleado(req):\n     empleado=EmpleadoCla.objects.all()\n     return render  (req,\"Empleados.html\",{\"empleado\":empleado})\ndef proveedor(req):",
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "cliente",
+        "kind": 2,
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "peekOfCode": "def cliente(req):\n     cliente=ClienteCla.objects.all()\n     return render  (req,\"Clientes.html\",{\"cliente\":cliente})\ndef empleado(req):\n     empleado=EmpleadoCla.objects.all()\n     return render  (req,\"Empleados.html\",{\"empleado\":empleado})\ndef proveedor(req):\n     proveedor=ProveedorCla.objects.all()\n     return render  (req,\"Proveedores.html\",{\"proveedor\":proveedor})\n#Buscador de personas segun su categoria",
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "empleado",
+        "kind": 2,
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "peekOfCode": "def empleado(req):\n     empleado=EmpleadoCla.objects.all()\n     return render  (req,\"Empleados.html\",{\"empleado\":empleado})\ndef proveedor(req):\n     proveedor=ProveedorCla.objects.all()\n     return render  (req,\"Proveedores.html\",{\"proveedor\":proveedor})\n#Buscador de personas segun su categoria\ndef buscar(request):\n    form = Buscar(request.GET)\n    results = []",
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "proveedor",
+        "kind": 2,
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "peekOfCode": "def proveedor(req):\n     proveedor=ProveedorCla.objects.all()\n     return render  (req,\"Proveedores.html\",{\"proveedor\":proveedor})\n#Buscador de personas segun su categoria\ndef buscar(request):\n    form = Buscar(request.GET)\n    results = []\n    if form.is_valid():\n        query = form.cleaned_data['query']\n        category = form.cleaned_data['category']",
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "buscar",
+        "kind": 2,
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "peekOfCode": "def buscar(request):\n    form = Buscar(request.GET)\n    results = []\n    if form.is_valid():\n        query = form.cleaned_data['query']\n        category = form.cleaned_data['category']\n        if category == 'clientes':\n            results = ClienteCla.objects.filter(nombre__icontains=query)\n        elif category == 'empleados':\n            results = EmpleadoCla.objects.filter(nombre__icontains=query)",
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "ultima_entrega_rothamel_esteban.asgi",
+        "description": "ultima_entrega_rothamel_esteban.asgi",
+        "peekOfCode": "application = get_asgi_application()",
+        "detail": "ultima_entrega_rothamel_esteban.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_DIR",
+        "kind": 5,
+        "importPath": "ultima_entrega_rothamel_esteban.settings",
+        "description": "ultima_entrega_rothamel_esteban.settings",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-g%3spzpk7oajkztc5h3%gvq)ulh-%+tzm0(=&lfa*f31=j_s9k'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "detail": "ultima_entrega_rothamel_esteban.settings",
+        "documentation": {}
+    },
+    {
+        "label": "SECRET_KEY",
+        "kind": 5,
+        "importPath": "ultima_entrega_rothamel_esteban.settings",
+        "description": "ultima_entrega_rothamel_esteban.settings",
+        "peekOfCode": "SECRET_KEY = 'django-insecure-g%3spzpk7oajkztc5h3%gvq)ulh-%+tzm0(=&lfa*f31=j_s9k'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',",
+        "detail": "ultima_entrega_rothamel_esteban.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEBUG",
+        "kind": 5,
+        "importPath": "ultima_entrega_rothamel_esteban.settings",
+        "description": "ultima_entrega_rothamel_esteban.settings",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',",
+        "detail": "ultima_entrega_rothamel_esteban.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_HOSTS",
+        "kind": 5,
+        "importPath": "ultima_entrega_rothamel_esteban.settings",
+        "description": "ultima_entrega_rothamel_esteban.settings",
+        "peekOfCode": "ALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'AppProyectoFinal',",
+        "detail": "ultima_entrega_rothamel_esteban.settings",
+        "documentation": {}
+    },
+    {
+        "label": "INSTALLED_APPS",
+        "kind": 5,
+        "importPath": "ultima_entrega_rothamel_esteban.settings",
+        "description": "ultima_entrega_rothamel_esteban.settings",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'AppProyectoFinal',\n]\nMIDDLEWARE = [",
+        "detail": "ultima_entrega_rothamel_esteban.settings",
+        "documentation": {}
+    },
+    {
+        "label": "MIDDLEWARE",
+        "kind": 5,
+        "importPath": "ultima_entrega_rothamel_esteban.settings",
+        "description": "ultima_entrega_rothamel_esteban.settings",
+        "peekOfCode": "MIDDLEWARE = [\n    'django.middleware.security.SecurityMiddleware',\n    'django.contrib.sessions.middleware.SessionMiddleware',\n    'django.middleware.common.CommonMiddleware',\n    'django.middleware.csrf.CsrfViewMiddleware',\n    'django.contrib.auth.middleware.AuthenticationMiddleware',\n    'django.contrib.messages.middleware.MessageMiddleware',\n    'django.middleware.clickjacking.XFrameOptionsMiddleware',\n]\nROOT_URLCONF = 'ultima_entrega_rothamel_esteban.urls'",
+        "detail": "ultima_entrega_rothamel_esteban.settings",
+        "documentation": {}
+    },
+    {
+        "label": "ROOT_URLCONF",
+        "kind": 5,
+        "importPath": "ultima_entrega_rothamel_esteban.settings",
+        "description": "ultima_entrega_rothamel_esteban.settings",
+        "peekOfCode": "ROOT_URLCONF = 'ultima_entrega_rothamel_esteban.urls'\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [r\"C:\\Users\\Usuario\\Desktop\\curso_python_clases\\entregas\\ProyectoFInalRothamel\\ultima_entrega_rothamel_esteban\\templates\"],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',",
+        "detail": "ultima_entrega_rothamel_esteban.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TEMPLATES",
+        "kind": 5,
+        "importPath": "ultima_entrega_rothamel_esteban.settings",
+        "description": "ultima_entrega_rothamel_esteban.settings",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [r\"C:\\Users\\Usuario\\Desktop\\curso_python_clases\\entregas\\ProyectoFInalRothamel\\ultima_entrega_rothamel_esteban\\templates\"],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "detail": "ultima_entrega_rothamel_esteban.settings",
+        "documentation": {}
+    },
+    {
+        "label": "WSGI_APPLICATION",
+        "kind": 5,
+        "importPath": "ultima_entrega_rothamel_esteban.settings",
+        "description": "ultima_entrega_rothamel_esteban.settings",
+        "peekOfCode": "WSGI_APPLICATION = 'ultima_entrega_rothamel_esteban.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.0/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation",
+        "detail": "ultima_entrega_rothamel_esteban.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASES",
+        "kind": 5,
+        "importPath": "ultima_entrega_rothamel_esteban.settings",
+        "description": "ultima_entrega_rothamel_esteban.settings",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME': BASE_DIR / 'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "detail": "ultima_entrega_rothamel_esteban.settings",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_PASSWORD_VALIDATORS",
+        "kind": 5,
+        "importPath": "ultima_entrega_rothamel_esteban.settings",
+        "description": "ultima_entrega_rothamel_esteban.settings",
+        "peekOfCode": "AUTH_PASSWORD_VALIDATORS = [\n    {\n        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',\n    },\n    {\n        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',\n    },",
+        "detail": "ultima_entrega_rothamel_esteban.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LANGUAGE_CODE",
+        "kind": 5,
+        "importPath": "ultima_entrega_rothamel_esteban.settings",
+        "description": "ultima_entrega_rothamel_esteban.settings",
+        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'AppProyectoFinal/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "ultima_entrega_rothamel_esteban.settings",
+        "documentation": {}
+    },
+    {
+        "label": "TIME_ZONE",
+        "kind": 5,
+        "importPath": "ultima_entrega_rothamel_esteban.settings",
+        "description": "ultima_entrega_rothamel_esteban.settings",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'AppProyectoFinal/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "ultima_entrega_rothamel_esteban.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_I18N",
+        "kind": 5,
+        "importPath": "ultima_entrega_rothamel_esteban.settings",
+        "description": "ultima_entrega_rothamel_esteban.settings",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'AppProyectoFinal/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "ultima_entrega_rothamel_esteban.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_TZ",
+        "kind": 5,
+        "importPath": "ultima_entrega_rothamel_esteban.settings",
+        "description": "ultima_entrega_rothamel_esteban.settings",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'AppProyectoFinal/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "ultima_entrega_rothamel_esteban.settings",
+        "documentation": {}
+    },
+    {
+        "label": "STATIC_URL",
+        "kind": 5,
+        "importPath": "ultima_entrega_rothamel_esteban.settings",
+        "description": "ultima_entrega_rothamel_esteban.settings",
+        "peekOfCode": "STATIC_URL = 'AppProyectoFinal/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "ultima_entrega_rothamel_esteban.settings",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "ultima_entrega_rothamel_esteban.settings",
+        "description": "ultima_entrega_rothamel_esteban.settings",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "ultima_entrega_rothamel_esteban.settings",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "ultima_entrega_rothamel_esteban.urls",
+        "description": "ultima_entrega_rothamel_esteban.urls",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('AppProyectoFinal/', include(\"AppProyectoFinal.urls\")),\n    path(\"\",include(\"AppProyectoFinal.urls\")),\n]",
+        "detail": "ultima_entrega_rothamel_esteban.urls",
+        "documentation": {}
+    },
+    {
+        "label": "application",
+        "kind": 5,
+        "importPath": "ultima_entrega_rothamel_esteban.wsgi",
+        "description": "ultima_entrega_rothamel_esteban.wsgi",
+        "peekOfCode": "application = get_wsgi_application()",
+        "detail": "ultima_entrega_rothamel_esteban.wsgi",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "manage",
+        "description": "manage",
+        "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ultima_entrega_rothamel_esteban.settings')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
+        "detail": "manage",
+        "documentation": {}
+    }
+]

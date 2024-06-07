@@ -1,0 +1,46 @@
+{% extends "C:\Users\Usuario\Desktop\curso_python_clases\entregas\ProyectoFInalRothamel\ultima_entrega_rothamel_esteban\templates\Padre.html"%}		
+{%load static%}
+{% block contenidoQueCambia %}
+<!--Aquí va lo que cambia, y lo asociado a está vista :) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Proyecto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .btn-custom {
+            background-color: #d3d3d3; /* Gris claro */
+            color: black; /* Letras en negro */
+            border: none;
+            margin-bottom: 20px;
+        }
+        .btn-custom:hover {
+            background-color: #c0c0c0; /* Gris un poco más oscuro al pasar el mouse */
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30vh;
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Lista de Proveedores</h1>
+    <!-- Contenedor para el mensaje -->
+    {% if message %}
+        <div id="message">{{ message }}</div>
+    {% endif %}
+    <!-- Aquí iría el resto de tu contenido de la página -->
+    <div class="button-container">
+        <a href="{% url 'CreaProveedor' %}" class="btn btn-custom">Completar datos del Proveedor</a>
+        <a href="{% url 'ListaProveedor' %}" class="btn btn-custom">Lista de Proveedores</a>
+    </div>
+</body>
+</html>
+{% endblock %}

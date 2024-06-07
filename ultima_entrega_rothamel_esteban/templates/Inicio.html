@@ -1,0 +1,16 @@
+{% extends "C:\Users\Usuario\Desktop\curso_python_clases\entregas\ProyectoFInalRothamel\ultima_entrega_rothamel_esteban\templates\Padre.html"%}		
+
+
+{% block contenidoQueCambia %}
+<div class="container">
+    <h1>Inicio</h1>
+    <form method="get" action="{% url 'buscar' %}">
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Buscar</button>
+    </form>
+</div>
+{% endblock %}
+
+
+
+{%load static%}

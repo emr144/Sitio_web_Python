@@ -1,0 +1,26 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Cliente</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header">
+                <h2>Detalles del Cliente</h2>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{ clientes.nombre }} {{ clientes.apellido }}</h5>
+                <p class="card-text">
+                    <strong>Email:</strong> {{ clientes.email }}<br>
+                    <strong>Teléfono:</strong> {{ clientes.telefono|default:"No proporcionado" }}<br>
+                    <strong>Dirección:</strong> {{ clientes.direccion|default:"No proporcionada" }}
+                </p>
+                <a href="{% url 'ListaCliente' %}" class="btn btn-primary">Volver a la lista de clientes</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
