@@ -1,12 +1,12 @@
 from django.urls import reverse_lazy
-from django.shortcuts import render ,redirect
+from django.shortcuts import render
 from .models import ClienteCla, EmpleadoCla, ProveedorCla
-from django.http import HttpResponse
-from .form import ClienteForm, EmpleadoForm , ProveedorForm, Buscar
+from .form import Buscar
 from django.views.generic import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import DeleteView, UpdateView, CreateView
-from django.views.decorators.csrf import csrf_protect
+from django.contrib.auth.mixins import LoginRequiredMixin
+
 
 def inicio(req):
      form = Buscar() 
@@ -24,7 +24,13 @@ def proveedor(req):
      proveedor=ProveedorCla.objects.all()
      return render  (req,"Proveedores.html",{"proveedor":proveedor})
 
+def ingresar(req):
+     return render  (req,"Ingresa.html")
+
+
 #Buscador de personas segun su categoria
+
+
 
 def buscar(request):
     form = Buscar(request.GET)
@@ -44,7 +50,8 @@ def buscar(request):
 #Clases para las distintas pestañas
 
 #Clientes
-class ClienteList(ListView):
+
+class ClienteList(LoginRequiredMixin,ListView):
     model = ClienteCla
     template_name = "Cliente_list.html"
     context_object_name="clientes"
@@ -73,7 +80,7 @@ class ClienteDelete(DeleteView):
     success_url=reverse_lazy('ListaCliente')
     
 #Empleado
-class EmpleadoList(ListView):
+class EmpleadoList(LoginRequiredMixin, ListView):
     model = EmpleadoCla
     template_name = "Empleado_list.html"
     context_object_name="empleados"
@@ -102,7 +109,7 @@ class EmpleadoDelete(DeleteView):
     success_url=reverse_lazy('ListaEmpleado')
 
 #Proveedor
-class ProveedorList(ListView):
+class ProveedorList(LoginRequiredMixin, ListView):
     model = ProveedorCla
     template_name = "Proveedor_list.html"
     context_object_name="proveedores"
@@ -129,3 +136,4 @@ class ProveedorDelete(DeleteView):
     model=ProveedorCla
     template_name="Proveedor_delete.html"
     success_url=reverse_lazy('ListaProveedor')
+

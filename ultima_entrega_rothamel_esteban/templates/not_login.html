@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso Restringido</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Color de fondo */
+        }
+        .container {
+            max-width: 500px; /* Ancho máximo del contenedor */
+        }
+        .alert {
+            border-radius: 10px; /* Bordes redondeados */
+        }
+        .btn {
+            margin-top: 20px; /* Espacio superior para el botón */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="alert alert-danger" role="alert">
+            <strong>¡Acceso Restringido!</strong> Debes iniciar sesión para acceder a esta información.
+        </div>
+        <a class="btn btn-primary btn-block" href="{% url 'inicio' %}">Volver a Inicio</a>
+    </div>
+</body>
+</html>

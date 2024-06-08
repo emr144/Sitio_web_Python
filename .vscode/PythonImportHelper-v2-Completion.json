@@ -48,6 +48,30 @@
         "documentation": {}
     },
     {
+        "label": "messages",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
         "label": "AppConfig",
         "importPath": "django.apps",
         "description": "django.apps",
@@ -64,11 +88,43 @@
         "documentation": {}
     },
     {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
         "isExtraImport": true,
         "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse_lazy",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
         "documentation": {}
     },
     {
@@ -264,6 +320,22 @@
         "documentation": {}
     },
     {
+        "label": "ingresar",
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "isExtraImport": true,
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "render",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
@@ -280,15 +352,15 @@
         "documentation": {}
     },
     {
-        "label": "HttpResponse",
-        "importPath": "django.http",
-        "description": "django.http",
+        "label": "ListView",
+        "importPath": "django.views.generic",
+        "description": "django.views.generic",
         "isExtraImport": true,
-        "detail": "django.http",
+        "detail": "django.views.generic",
         "documentation": {}
     },
     {
-        "label": "ListView",
+        "label": "FormView",
         "importPath": "django.views.generic",
         "description": "django.views.generic",
         "isExtraImport": true,
@@ -328,11 +400,67 @@
         "documentation": {}
     },
     {
-        "label": "csrf_protect",
-        "importPath": "django.views.decorators.csrf",
-        "description": "django.views.decorators.csrf",
+        "label": "LoginRequiredMixin",
+        "importPath": "django.contrib.auth.mixins",
+        "description": "django.contrib.auth.mixins",
         "isExtraImport": true,
-        "detail": "django.views.decorators.csrf",
+        "detail": "django.contrib.auth.mixins",
+        "documentation": {}
+    },
+    {
+        "label": "AuthenticationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "AuthenticationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "UserCreationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "LoginView",
+        "importPath": "django.contrib.auth.views",
+        "description": "django.contrib.auth.views",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.views",
+        "documentation": {}
+    },
+    {
+        "label": "authenticate",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
         "documentation": {}
     },
     {
@@ -463,7 +591,7 @@
         "kind": 5,
         "importPath": "AppProyectoFinal.urls",
         "description": "AppProyectoFinal.urls",
-        "peekOfCode": "urlpatterns = [\n    path('AppProyectoFinal/inicio/', inicio,name=\"inicio\"),\n    path('AppProyectoFinal/cliente/', cliente,name=\"cliente\"),\n    path('AppProyectoFinal/empleado/', empleado,name=\"empleado\"),\n    path('AppProyectoFinal/proveedor/', proveedor,name=\"proveedor\"),\n    path('buscar/', buscar, name='buscar'),\n    path('cliente_lista/', ClienteList.as_view(), name='ListaCliente'),\n    path('cliente-detalle/<pk>/', ClienteDetail.as_view(), name='DetalleCliente'),\n    path('cliente-crea/', ClienteCreate.as_view(), name='CreaCliente'),\n    path('cliente-actualiza/<pk>/', ClienteUpdate.as_view(), name='ActualizaCliente'),",
+        "peekOfCode": "urlpatterns = [\n    path('AppProyectoFinal/inicio/', inicio,name=\"inicio\"),\n    path('AppProyectoFinal/cliente/', cliente,name=\"cliente\"),\n    path('AppProyectoFinal/empleado/', empleado,name=\"empleado\"),\n    path('AppProyectoFinal/proveedor/', proveedor,name=\"proveedor\"),\n    path('AppProyectoFinal/ingresar/', ingresar,name=\"ingresar\"),\n    path('buscar/', buscar, name='buscar'),\n    path('cliente_lista/', ClienteList.as_view(), name='ListaCliente'),\n    path('cliente-detalle/<pk>/', ClienteDetail.as_view(), name='DetalleCliente'),\n    path('cliente-crea/', ClienteCreate.as_view(), name='CreaCliente'),",
         "detail": "AppProyectoFinal.urls",
         "documentation": {}
     },
@@ -472,7 +600,7 @@
         "kind": 6,
         "importPath": "AppProyectoFinal.views",
         "description": "AppProyectoFinal.views",
-        "peekOfCode": "class ClienteList(ListView):\n    model = ClienteCla\n    template_name = \"Cliente_list.html\"\n    context_object_name=\"clientes\"\nclass ClienteDetail(DetailView):\n    model = ClienteCla\n    template_name = \"Cliente_detail.html\"\n    context_object_name=\"clientes\"\nclass ClienteCreate(CreateView):\n    model=ClienteCla",
+        "peekOfCode": "class ClienteList(LoginRequiredMixin,ListView):\n    model = ClienteCla\n    template_name = \"Cliente_list.html\"\n    context_object_name=\"clientes\"\nclass ClienteDetail(DetailView):\n    model = ClienteCla\n    template_name = \"Cliente_detail.html\"\n    context_object_name=\"clientes\"\nclass ClienteCreate(CreateView):\n    model=ClienteCla",
         "detail": "AppProyectoFinal.views",
         "documentation": {}
     },
@@ -508,7 +636,7 @@
         "kind": 6,
         "importPath": "AppProyectoFinal.views",
         "description": "AppProyectoFinal.views",
-        "peekOfCode": "class ClienteDelete(DeleteView):\n    model=ClienteCla\n    template_name=\"Cliente_delete.html\"\n    success_url=reverse_lazy('ListaCliente')\n#Empleado\nclass EmpleadoList(ListView):\n    model = EmpleadoCla\n    template_name = \"Empleado_list.html\"\n    context_object_name=\"empleados\"\nclass EmpleadoDetail(DetailView):",
+        "peekOfCode": "class ClienteDelete(DeleteView):\n    model=ClienteCla\n    template_name=\"Cliente_delete.html\"\n    success_url=reverse_lazy('ListaCliente')\n#Empleado\nclass EmpleadoList(LoginRequiredMixin, ListView):\n    model = EmpleadoCla\n    template_name = \"Empleado_list.html\"\n    context_object_name=\"empleados\"\nclass EmpleadoDetail(DetailView):",
         "detail": "AppProyectoFinal.views",
         "documentation": {}
     },
@@ -517,7 +645,7 @@
         "kind": 6,
         "importPath": "AppProyectoFinal.views",
         "description": "AppProyectoFinal.views",
-        "peekOfCode": "class EmpleadoList(ListView):\n    model = EmpleadoCla\n    template_name = \"Empleado_list.html\"\n    context_object_name=\"empleados\"\nclass EmpleadoDetail(DetailView):\n    model = EmpleadoCla\n    template_name = \"Empleado_detail.html\"\n    context_object_name=\"empleado\"\nclass EmpleadoCreate(CreateView):\n    model=EmpleadoCla",
+        "peekOfCode": "class EmpleadoList(LoginRequiredMixin, ListView):\n    model = EmpleadoCla\n    template_name = \"Empleado_list.html\"\n    context_object_name=\"empleados\"\nclass EmpleadoDetail(DetailView):\n    model = EmpleadoCla\n    template_name = \"Empleado_detail.html\"\n    context_object_name=\"empleado\"\nclass EmpleadoCreate(CreateView):\n    model=EmpleadoCla",
         "detail": "AppProyectoFinal.views",
         "documentation": {}
     },
@@ -553,7 +681,7 @@
         "kind": 6,
         "importPath": "AppProyectoFinal.views",
         "description": "AppProyectoFinal.views",
-        "peekOfCode": "class EmpleadoDelete(DeleteView):\n    model=EmpleadoCla\n    template_name=\"Empleado_delete.html\"\n    success_url=reverse_lazy('ListaEmpleado')\n#Proveedor\nclass ProveedorList(ListView):\n    model = ProveedorCla\n    template_name = \"Proveedor_list.html\"\n    context_object_name=\"proveedores\"\nclass ProveedorDetail(DetailView):",
+        "peekOfCode": "class EmpleadoDelete(DeleteView):\n    model=EmpleadoCla\n    template_name=\"Empleado_delete.html\"\n    success_url=reverse_lazy('ListaEmpleado')\n#Proveedor\nclass ProveedorList(LoginRequiredMixin, ListView):\n    model = ProveedorCla\n    template_name = \"Proveedor_list.html\"\n    context_object_name=\"proveedores\"\nclass ProveedorDetail(DetailView):",
         "detail": "AppProyectoFinal.views",
         "documentation": {}
     },
@@ -562,7 +690,7 @@
         "kind": 6,
         "importPath": "AppProyectoFinal.views",
         "description": "AppProyectoFinal.views",
-        "peekOfCode": "class ProveedorList(ListView):\n    model = ProveedorCla\n    template_name = \"Proveedor_list.html\"\n    context_object_name=\"proveedores\"\nclass ProveedorDetail(DetailView):\n    model = ProveedorCla\n    template_name = \"Proveedor_detail.html\"\n    context_object_name=\"proveedor\"\nclass ProveedorCreate(CreateView):\n    model=ProveedorCla",
+        "peekOfCode": "class ProveedorList(LoginRequiredMixin, ListView):\n    model = ProveedorCla\n    template_name = \"Proveedor_list.html\"\n    context_object_name=\"proveedores\"\nclass ProveedorDetail(DetailView):\n    model = ProveedorCla\n    template_name = \"Proveedor_detail.html\"\n    context_object_name=\"proveedor\"\nclass ProveedorCreate(CreateView):\n    model=ProveedorCla",
         "detail": "AppProyectoFinal.views",
         "documentation": {}
     },
@@ -616,7 +744,7 @@
         "kind": 2,
         "importPath": "AppProyectoFinal.views",
         "description": "AppProyectoFinal.views",
-        "peekOfCode": "def cliente(req):\n     cliente=ClienteCla.objects.all()\n     return render  (req,\"Clientes.html\",{\"cliente\":cliente})\ndef empleado(req):\n     empleado=EmpleadoCla.objects.all()\n     return render  (req,\"Empleados.html\",{\"empleado\":empleado})\ndef proveedor(req):\n     proveedor=ProveedorCla.objects.all()\n     return render  (req,\"Proveedores.html\",{\"proveedor\":proveedor})\n#Buscador de personas segun su categoria",
+        "peekOfCode": "def cliente(req):\n     cliente=ClienteCla.objects.all()\n     return render  (req,\"Clientes.html\",{\"cliente\":cliente})\ndef empleado(req):\n     empleado=EmpleadoCla.objects.all()\n     return render  (req,\"Empleados.html\",{\"empleado\":empleado})\ndef proveedor(req):\n     proveedor=ProveedorCla.objects.all()\n     return render  (req,\"Proveedores.html\",{\"proveedor\":proveedor})\ndef ingresar(req):",
         "detail": "AppProyectoFinal.views",
         "documentation": {}
     },
@@ -625,7 +753,7 @@
         "kind": 2,
         "importPath": "AppProyectoFinal.views",
         "description": "AppProyectoFinal.views",
-        "peekOfCode": "def empleado(req):\n     empleado=EmpleadoCla.objects.all()\n     return render  (req,\"Empleados.html\",{\"empleado\":empleado})\ndef proveedor(req):\n     proveedor=ProveedorCla.objects.all()\n     return render  (req,\"Proveedores.html\",{\"proveedor\":proveedor})\n#Buscador de personas segun su categoria\ndef buscar(request):\n    form = Buscar(request.GET)\n    results = []",
+        "peekOfCode": "def empleado(req):\n     empleado=EmpleadoCla.objects.all()\n     return render  (req,\"Empleados.html\",{\"empleado\":empleado})\ndef proveedor(req):\n     proveedor=ProveedorCla.objects.all()\n     return render  (req,\"Proveedores.html\",{\"proveedor\":proveedor})\ndef ingresar(req):\n     return render  (req,\"Ingresa.html\")\n#Buscador de personas segun su categoria\ndef buscar(request):",
         "detail": "AppProyectoFinal.views",
         "documentation": {}
     },
@@ -634,7 +762,16 @@
         "kind": 2,
         "importPath": "AppProyectoFinal.views",
         "description": "AppProyectoFinal.views",
-        "peekOfCode": "def proveedor(req):\n     proveedor=ProveedorCla.objects.all()\n     return render  (req,\"Proveedores.html\",{\"proveedor\":proveedor})\n#Buscador de personas segun su categoria\ndef buscar(request):\n    form = Buscar(request.GET)\n    results = []\n    if form.is_valid():\n        query = form.cleaned_data['query']\n        category = form.cleaned_data['category']",
+        "peekOfCode": "def proveedor(req):\n     proveedor=ProveedorCla.objects.all()\n     return render  (req,\"Proveedores.html\",{\"proveedor\":proveedor})\ndef ingresar(req):\n     return render  (req,\"Ingresa.html\")\n#Buscador de personas segun su categoria\ndef buscar(request):\n    form = Buscar(request.GET)\n    results = []\n    if form.is_valid():",
+        "detail": "AppProyectoFinal.views",
+        "documentation": {}
+    },
+    {
+        "label": "ingresar",
+        "kind": 2,
+        "importPath": "AppProyectoFinal.views",
+        "description": "AppProyectoFinal.views",
+        "peekOfCode": "def ingresar(req):\n     return render  (req,\"Ingresa.html\")\n#Buscador de personas segun su categoria\ndef buscar(request):\n    form = Buscar(request.GET)\n    results = []\n    if form.is_valid():\n        query = form.cleaned_data['query']\n        category = form.cleaned_data['category']\n        if category == 'clientes':",
         "detail": "AppProyectoFinal.views",
         "documentation": {}
     },
@@ -648,12 +785,93 @@
         "documentation": {}
     },
     {
+        "label": "StartappConfig",
+        "kind": 6,
+        "importPath": "Startapp.apps",
+        "description": "Startapp.apps",
+        "peekOfCode": "class StartappConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'Startapp'",
+        "detail": "Startapp.apps",
+        "documentation": {}
+    },
+    {
+        "label": "LoginForm",
+        "kind": 6,
+        "importPath": "Startapp.forms",
+        "description": "Startapp.forms",
+        "peekOfCode": "class LoginForm(AuthenticationForm):\n    # Puedes personalizar este formulario si lo deseas\n    username = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Nombre de usuario'}))\n    password = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Contraseña'}))\n    def clean(self):\n        cleaned_data = super().clean()\n        # Puedes agregar validaciones adicionales aquí si lo deseas\n        return cleaned_data",
+        "detail": "Startapp.forms",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "Startapp.urls",
+        "description": "Startapp.urls",
+        "peekOfCode": "urlpatterns = [\n    path('login/', login_view, name='login'),\n    path('logout/', logout_view, name='logout'),\n    path('register/', register_view, name='register'),\n    path('accounts/login/', not_login_view.as_view(), name='Notlogin'),\n    ]",
+        "detail": "Startapp.urls",
+        "documentation": {}
+    },
+    {
+        "label": "not_login_view",
+        "kind": 6,
+        "importPath": "Startapp.views",
+        "description": "Startapp.views",
+        "peekOfCode": "class not_login_view(FormView):\n    template_name = 'not_login.html'\n    form_class = LoginForm\n    success_url = reverse_lazy('inicio')\n    def form_valid(self, form):\n        # Autenticar al usuario\n        login(self.request, form.get_user())\n        return super().form_valid(form)\n    def form_invalid(self, form):\n        # Agregar mensaje de error",
+        "detail": "Startapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "login_view",
+        "kind": 2,
+        "importPath": "Startapp.views",
+        "description": "Startapp.views",
+        "peekOfCode": "def login_view(request):\n    if request.method == \"POST\":\n        form = AuthenticationForm(request, data=request.POST)\n        if form.is_valid():\n            username = form.cleaned_data.get('username')\n            password = form.cleaned_data.get('password')\n            user = authenticate(username=username, password=password)\n            if user is not None:\n                login(request, user)\n                return redirect('inicio')  # Cambia 'inicio' por tu vista de inicio",
+        "detail": "Startapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "logout_view",
+        "kind": 2,
+        "importPath": "Startapp.views",
+        "description": "Startapp.views",
+        "peekOfCode": "def logout_view(request):\n    if request.method == \"POST\":\n        logout(request)\n        return redirect('inicio')  # Cambia 'inicio' por tu vista de inicio\n    return render(request, 'logout.html')\ndef register_view(request):\n    if request.method == \"POST\":\n        form = UserCreationForm(request.POST)\n        if form.is_valid():\n            form.save()",
+        "detail": "Startapp.views",
+        "documentation": {}
+    },
+    {
+        "label": "register_view",
+        "kind": 2,
+        "importPath": "Startapp.views",
+        "description": "Startapp.views",
+        "peekOfCode": "def register_view(request):\n    if request.method == \"POST\":\n        form = UserCreationForm(request.POST)\n        if form.is_valid():\n            form.save()\n            return redirect('login')  # Cambia 'login' por tu vista de login\n    else:\n        form = UserCreationForm()\n    return render(request, 'register.html', {'form': form})\nclass not_login_view(FormView):",
+        "detail": "Startapp.views",
+        "documentation": {}
+    },
+    {
         "label": "application",
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.asgi",
         "description": "ultima_entrega_rothamel_esteban.asgi",
         "peekOfCode": "application = get_asgi_application()",
         "detail": "ultima_entrega_rothamel_esteban.asgi",
+        "documentation": {}
+    },
+    {
+        "label": "LOGIN_REDIRECT_URL",
+        "kind": 5,
+        "importPath": "ultima_entrega_rothamel_esteban.settings",
+        "description": "ultima_entrega_rothamel_esteban.settings",
+        "peekOfCode": "LOGIN_REDIRECT_URL = 'home'  # La página a la que se redirige después de iniciar sesión\nLOGOUT_REDIRECT_URL = 'login'  # La página a la que se redirige después de cerrar sesión\n# Build paths inside the project like this: BASE_DIR / 'subdir'.\nBASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-g%3spzpk7oajkztc5h3%gvq)ulh-%+tzm0(=&lfa*f31=j_s9k'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True",
+        "detail": "ultima_entrega_rothamel_esteban.settings",
+        "documentation": {}
+    },
+    {
+        "label": "LOGOUT_REDIRECT_URL",
+        "kind": 5,
+        "importPath": "ultima_entrega_rothamel_esteban.settings",
+        "description": "ultima_entrega_rothamel_esteban.settings",
+        "peekOfCode": "LOGOUT_REDIRECT_URL = 'login'  # La página a la que se redirige después de cerrar sesión\n# Build paths inside the project like this: BASE_DIR / 'subdir'.\nBASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-g%3spzpk7oajkztc5h3%gvq)ulh-%+tzm0(=&lfa*f31=j_s9k'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []",
+        "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
     {
@@ -697,7 +915,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'AppProyectoFinal',\n]\nMIDDLEWARE = [",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'AppProyectoFinal',\n    'Startapp',\n]",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -760,7 +978,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'en-us'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'AppProyectoFinal/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "LANGUAGE_CODE = 'es'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'AppProyectoFinal/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -769,7 +987,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'AppProyectoFinal/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'AppProyectoFinal/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -778,7 +996,16 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'AppProyectoFinal/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'AppProyectoFinal/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "detail": "ultima_entrega_rothamel_esteban.settings",
+        "documentation": {}
+    },
+    {
+        "label": "USE_L10N",
+        "kind": 5,
+        "importPath": "ultima_entrega_rothamel_esteban.settings",
+        "description": "ultima_entrega_rothamel_esteban.settings",
+        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'AppProyectoFinal/static/'\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -814,7 +1041,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.urls",
         "description": "ultima_entrega_rothamel_esteban.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('AppProyectoFinal/', include(\"AppProyectoFinal.urls\")),\n    path(\"\",include(\"AppProyectoFinal.urls\")),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('AppProyectoFinal/', include(\"AppProyectoFinal.urls\")),\n    path(\"\",include(\"AppProyectoFinal.urls\")),\n    path('admin/', admin.site.urls),\n    path('', include('Startapp.urls')),  # Asegúrate de reemplazar 'Startapp' con el nombre de tu aplicación\n]",
         "detail": "ultima_entrega_rothamel_esteban.urls",
         "documentation": {}
     },

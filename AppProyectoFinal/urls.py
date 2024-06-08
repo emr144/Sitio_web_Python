@@ -3,7 +3,9 @@ from AppProyectoFinal.views import inicio,cliente, empleado, proveedor
 from AppProyectoFinal.views import ClienteList, ClienteDetail, ClienteCreate, ClienteUpdate ,ClienteDelete
 from AppProyectoFinal.views import EmpleadoList, EmpleadoDetail, EmpleadoCreate, EmpleadoUpdate ,EmpleadoDelete
 from AppProyectoFinal.views import ProveedorList, ProveedorDetail, ProveedorCreate, ProveedorUpdate ,ProveedorDelete
-from AppProyectoFinal.views import buscar
+from AppProyectoFinal.views import buscar, ingresar
+
+
 
 
 urlpatterns = [
@@ -12,6 +14,7 @@ urlpatterns = [
     path('AppProyectoFinal/cliente/', cliente,name="cliente"),
     path('AppProyectoFinal/empleado/', empleado,name="empleado"),
     path('AppProyectoFinal/proveedor/', proveedor,name="proveedor"),
+    path('AppProyectoFinal/ingresar/', ingresar,name="ingresar"),
 
     path('buscar/', buscar, name='buscar'),
 
@@ -32,4 +35,5 @@ urlpatterns = [
     path('proveedor-crea/', ProveedorCreate.as_view(), name='CreaProveedor'),
     path('proveedor-actualiza/<pk>/', ProveedorUpdate.as_view(), name='ActualizaProveedor'),
     path('proveedor-elimina/<pk>/', ProveedorDelete.as_view(), name='EliminaProveedor'),
+
        ]
