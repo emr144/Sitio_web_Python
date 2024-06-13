@@ -10,15 +10,15 @@ from AppProyectoFinal.views import buscar, ingresar
 
 urlpatterns = [
     
-    path('AppProyectoFinal/inicio/', inicio,name="inicio"),
-    path('AppProyectoFinal/cliente/', cliente,name="cliente"),
-    path('AppProyectoFinal/empleado/', empleado,name="empleado"),
-    path('AppProyectoFinal/proveedor/', proveedor,name="proveedor"),
-    path('AppProyectoFinal/ingresar/', ingresar,name="ingresar"),
+    path('inicio/', inicio,name="inicio"),
+    path('cliente/', cliente,name="cliente"),
+    path('empleado/', empleado,name="empleado"),
+    path('proveedor/', proveedor,name="proveedor"),
+    path('ingresar/', ingresar,name="ingresar"),
 
     path('buscar/', buscar, name='buscar'),
 
-    path('cliente_lista/', ClienteList.as_view(), name='ListaCliente'),
+    path('cliente-lista/', ClienteList.as_view(), name='ListaCliente'),
     path('cliente-detalle/<pk>/', ClienteDetail.as_view(), name='DetalleCliente'),
     path('cliente-crea/', ClienteCreate.as_view(), name='CreaCliente'),
     path('cliente-actualiza/<pk>/', ClienteUpdate.as_view(), name='ActualizaCliente'),

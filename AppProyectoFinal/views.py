@@ -14,7 +14,7 @@ def inicio(req):
 
 def cliente(req):
      cliente=ClienteCla.objects.all()
-     return render  (req,"Clientes.html",{"cliente":cliente})
+     return render  (req,"Clientes.html",{"clientes":cliente})
 
 def empleado(req):
      empleado=EmpleadoCla.objects.all()

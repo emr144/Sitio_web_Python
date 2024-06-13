@@ -1,4 +1,3 @@
-from django.contrib import admin
 from django import forms
 from .models import ProveedorCla, ClienteCla, EmpleadoCla
 
@@ -26,5 +25,4 @@ class Buscar(forms.Form):
         ('empleados', 'Empleados'),
         ('proveedores', 'Proveedores')
     ])
-    
     

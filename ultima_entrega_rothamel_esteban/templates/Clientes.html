@@ -29,11 +29,11 @@
         }
     </style>
 </head>
-<h1>Lista de Clientes</h1>
+<h1>Lista de clientes</h1>
 <!-- Contenedor para el mensaje -->
-{% if message %}
-    <div id="message">{{ message }}</div>
-{% endif %}
+{% if cliente %}
+    <div id="cliente">{{ cliente }}</div>
+{% endif %} 
 <body>
     <div class="button-container">
         <a href="{% url 'CreaCliente' %}" class="btn btn-custom">Completar datos del cliente</a>
