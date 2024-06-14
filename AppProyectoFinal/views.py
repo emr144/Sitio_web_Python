@@ -1,6 +1,7 @@
 from django.urls import reverse_lazy
 from django.shortcuts import render
 from .models import ClienteCla, EmpleadoCla, ProveedorCla
+from django.db.models import Q
 from .form import Buscar
 from django.views.generic import ListView
 from django.views.generic.detail import DetailView
@@ -30,28 +31,43 @@ def ingresar(req):
 
 #Buscador de personas segun su categoria
 
-
-
 def buscar(request):
     form = Buscar(request.GET)
     results = []
     if form.is_valid():
         query = form.cleaned_data['query']
         category = form.cleaned_data['category']
-        if category == 'clientes':
-            results = ClienteCla.objects.filter(nombre__icontains=query)
-        elif category == 'empleados':
-            results = EmpleadoCla.objects.filter(nombre__icontains=query)
-        elif category == 'proveedores':
-            results = ProveedorCla.objects.filter(nombre__icontains=query)
-    return render(request, 'formularioBusqueda.html', {'form': form, 'results': results})
+        
 
+        if category == 'clientes':
+            results = ClienteCla.objects.filter(
+                Q(nombre__icontains=query) |  
+                Q(apellido__icontains=query) | 
+                Q(direccion__icontains=query)   
+
+            )
+        elif category == 'empleados':
+            results = EmpleadoCla.objects.filter(
+                Q(nombre__icontains=query) |
+                Q(apellido__icontains=query) | 
+                Q(puesto__icontains=query)  
+       
+            )
+        elif category == 'proveedores':
+            results = ProveedorCla.objects.filter(
+                Q(nombre__icontains=query) |  
+                Q(direccion__icontains=query) | 
+                Q(email__icontains=query)  
+                
+            )
+
+    return render(request, 'formularioBusqueda.html', {'form': form, 'results': results})
 
 #Clases para las distintas pestañas
 
 #Clientes
 
-class ClienteList(LoginRequiredMixin,ListView):
+class ClienteList(ListView):
     model = ClienteCla
     template_name = "Cliente_list.html"
     context_object_name="clientes"
@@ -67,14 +83,14 @@ class ClienteCreate(CreateView):
     fields=["nombre","apellido","telefono","direccion","email"]
     success_url=reverse_lazy('ListaCliente')
 
-class ClienteUpdate(UpdateView):
+class ClienteUpdate(LoginRequiredMixin,UpdateView):
     model=ClienteCla
     template_name="Cliente_update.html"
     fields=("__all__")
     success_url=reverse_lazy('ListaCliente')
     context_object_name="clientes"
 
-class ClienteDelete(DeleteView):
+class ClienteDelete(LoginRequiredMixin,DeleteView):
     model=ClienteCla
     template_name="Cliente_delete.html"
     success_url=reverse_lazy('ListaCliente')

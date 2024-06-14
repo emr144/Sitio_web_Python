@@ -60,12 +60,13 @@
             <a class="navbar-brand" href="{% url 'ListaEmpleado' %}">Empleado</a>
             <a class="navbar-brand" href="{% url 'ListaProveedor' %}">Proveedores</a>
             {% if user.is_authenticated %}
-                <a class="btn btn-primary" href="{% url 'logout' %}">{{ user.username }} (Salir)</a>
+                <a class="btn btn-primary" href="{% url 'user' %}">{{ user.username }} </a>
             {% else %}
                 <a class="btn btn-primary" href="{% url 'login' %}">Ingresar</a>
             {% endif %}
         </div>
     </nav>
+ {% comment %} path("start/",include('Startapp.urls')), {% endcomment %}
     <!-- Masthead-->
     <header class="masthead">
         <div class="container">
