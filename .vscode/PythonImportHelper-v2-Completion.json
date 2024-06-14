@@ -1183,7 +1183,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'es'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR ,'AppProyectoFinal','static')]#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/']\n# Default primary key field type",
+        "peekOfCode": "LANGUAGE_CODE = 'es'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR ,'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/')]#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/']\n# Default primary key field type",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1192,7 +1192,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR ,'AppProyectoFinal','static')]#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/']\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR ,'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/')]#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/']\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1201,7 +1201,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR ,'AppProyectoFinal','static')]#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/']\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR ,'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/')]#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/']\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1210,7 +1210,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR ,'AppProyectoFinal','static')]#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/']\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Media files (Uploaded files)",
+        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR ,'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/')]#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/']\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Media files (Uploaded files)",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1219,7 +1219,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR ,'AppProyectoFinal','static')]#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/']\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Media files (Uploaded files)\nMEDIA_URL = '/media/'",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR ,'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/')]#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/']\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Media files (Uploaded files)\nMEDIA_URL ='/media/'# 'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/media/'",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1228,7 +1228,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "STATIC_URL = '/static/'#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR ,'AppProyectoFinal','static')]#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/']\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Media files (Uploaded files)\nMEDIA_URL = '/media/'\nMEDIA_ROOT =  os.path.join(BASE_DIR,'AppProyectoFinal', 'media')\n# Templates\nTEMPLATES = [",
+        "peekOfCode": "STATIC_URL = 'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR ,'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/')]#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/']\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Media files (Uploaded files)\nMEDIA_URL ='/media/'# 'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Templates\nTEMPLATES = [",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1237,7 +1237,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "STATICFILES_DIRS = [os.path.join(BASE_DIR ,'AppProyectoFinal','static')]#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/']\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Media files (Uploaded files)\nMEDIA_URL = '/media/'\nMEDIA_ROOT =  os.path.join(BASE_DIR,'AppProyectoFinal', 'media')\n# Templates\nTEMPLATES = [\n    {",
+        "peekOfCode": "STATICFILES_DIRS = [os.path.join(BASE_DIR ,'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/')]#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/']\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Media files (Uploaded files)\nMEDIA_URL ='/media/'# 'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Templates\nTEMPLATES = [\n    {",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1246,16 +1246,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Media files (Uploaded files)\nMEDIA_URL = '/media/'\nMEDIA_ROOT =  os.path.join(BASE_DIR,'AppProyectoFinal', 'media')\n# Templates\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR ,'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/ultima_entrega_rothamel_esteban/templates'],\n        'APP_DIRS': True,",
-        "detail": "ultima_entrega_rothamel_esteban.settings",
-        "documentation": {}
-    },
-    {
-        "label": "MEDIA_URL",
-        "kind": 5,
-        "importPath": "ultima_entrega_rothamel_esteban.settings",
-        "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "MEDIA_URL = '/media/'\nMEDIA_ROOT =  os.path.join(BASE_DIR,'AppProyectoFinal', 'media')\n# Templates\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR ,'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/ultima_entrega_rothamel_esteban/templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Media files (Uploaded files)\nMEDIA_URL ='/media/'# 'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Templates\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR ,'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/ultima_entrega_rothamel_esteban/templates'],\n        'APP_DIRS': True,",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1264,7 +1255,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "MEDIA_ROOT =  os.path.join(BASE_DIR,'AppProyectoFinal', 'media')\n# Templates\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR ,'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/ultima_entrega_rothamel_esteban/templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',",
+        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Templates\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR ,'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/ultima_entrega_rothamel_esteban/templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },

@@ -14,7 +14,11 @@
                 <div class="card-body">
                     <div class="row mb-3">
                         <div class="col-md-4">
-                            <img src="{% static 'images/default_profile.png' %}" class="img-fluid rounded-circle" alt="Foto de perfil">
+                            {% if request.user.image %}
+                                <img src="{{ request.user.image.url }}" class="img-fluid rounded-circle" alt="Foto de perfil">
+                            {% else %}
+                                <img src="{% static 'images/default_profile.png' %}" class="img-fluid rounded-circle" alt="Foto de perfil">
+                            {% endif %}
                         </div>
                         <div class="col-md-8">
                             <h5>{{ user.first_name }} {{ user.last_name }}</h5>

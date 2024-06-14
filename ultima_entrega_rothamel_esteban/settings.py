@@ -112,8 +112,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = '/static/'#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR ,'AppProyectoFinal','static')]#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/']
+STATIC_URL = 'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR ,'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/')]#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/']
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
@@ -122,8 +122,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # Media files (Uploaded files)
-MEDIA_URL = '/media/'
-MEDIA_ROOT =  os.path.join(BASE_DIR,'AppProyectoFinal', 'media')
+MEDIA_URL ='/media/'# 'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 
 
 # Templates
