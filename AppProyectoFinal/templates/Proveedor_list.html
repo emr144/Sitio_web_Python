@@ -1,8 +1,8 @@
-{% extends "C:\Users\Usuario\Desktop\curso_python_clases\entregas\ProyectoFInalRothamel\ultima_entrega_rothamel_esteban\templates\Padre.html" %}
+{% extends "Padre.html" %}
 {% load static %}
 {% block contenidoQueCambia %}
 
-<h1>Lista de Clientes</h1>
+<h1>Lista de Proveedor</h1>
 <style>
     /* Estilos para mejorar la visibilidad de los enlaces */
     .clickable-link {
@@ -19,19 +19,19 @@
     }
 </style>
 <ul>
-    {% for cliente in clientes %}
+    {% for proveedor in proveedores %}
         <li>            
-            <a href="{% url 'DetalleCliente' cliente.id %}" class="clickable-link">
-                {{ cliente.nombre }} {{ cliente.apellido }}
+            <a href="{% url 'DetalleProveedor' proveedor.id %}" class="clickable-link">
+                {{ proveedor.nombre }} 
             </a>
         </li>
         <div>
             <div style="display: flex; gap: 10px;">
                 <!-- Formulario para eliminar -->
-                <form action="{% url 'EliminaCliente' cliente.id %}" method="get" style="margin: 0;">
+                <form action="{% url 'EliminaProveedor' proveedor.id %}" method="get" style="margin: 0;">
                     {% csrf_token %}
                     <button type="submit" style="
-                        background-color: grey; /* Rojo */
+                        background-color:grey; /* Rojo */
                         color: white;
                         padding: 2px 10px;
                         border: none;
@@ -43,12 +43,12 @@
                 </form> 
 
                 <!-- Formulario para editar -->
-                <form action="{% url 'ActualizaCliente' cliente.id %}" method="get" style="margin: 0;">
+                <form action="{% url 'ActualizaProveedor' proveedor.id %}" method="get" style="margin: 0;">
                     {% csrf_token %}
                     <button type="submit" style="
                         background-color: grey; /* Verde */
                         color: white;
-                        padding:2px 10px;
+                        padding: 2px 10px;
                         border: none;
                         border-radius: 5px;
                         cursor: pointer;
@@ -59,7 +59,7 @@
             </div>
         </div>
     {% endfor %}
-</ul> 
+</ul>
 
 <style>
     .btn-custom {
@@ -78,11 +78,15 @@
         height: 30vh;
         flex-direction: column;
     }
-</style> 
-
+</style>
+<script>
+    function confirmDelete() {
+        return confirm('¿Estás seguro de que deseas eliminar este proveedor?');
+    }
+</script>
 <body>
     <div class="button-container">
-        <a href="{% url 'CreaCliente' %}" class="btn btn-custom">Cargar nuevo cliente</a>
+        <a href="{% url 'CreaProveedor' %}" class="btn btn-custom">Cargar nuevo Proveedor</a>
     </div>
 </body>
 {% endblock %}

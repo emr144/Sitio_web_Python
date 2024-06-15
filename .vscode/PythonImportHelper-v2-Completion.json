@@ -56,6 +56,38 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -499,22 +531,6 @@
         "documentation": {}
     },
     {
-        "label": "AuthenticationForm",
-        "importPath": "django.contrib.auth.forms",
-        "description": "django.contrib.auth.forms",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.forms",
-        "documentation": {}
-    },
-    {
-        "label": "AuthenticationForm",
-        "importPath": "django.contrib.auth.forms",
-        "description": "django.contrib.auth.forms",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.forms",
-        "documentation": {}
-    },
-    {
         "label": "UserCreationForm",
         "importPath": "django.contrib.auth.forms",
         "description": "django.contrib.auth.forms",
@@ -523,11 +539,27 @@
         "documentation": {}
     },
     {
-        "label": "NotLoginView",
-        "importPath": "Startapp.views",
-        "description": "Startapp.views",
+        "label": "AuthenticationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
         "isExtraImport": true,
-        "detail": "Startapp.views",
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "AuthenticationForm",
+        "importPath": "django.contrib.auth.forms",
+        "description": "django.contrib.auth.forms",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.forms",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
         "documentation": {}
     },
     {
@@ -552,6 +584,22 @@
         "description": "django.contrib.auth",
         "isExtraImport": true,
         "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "NotLoginView",
+        "importPath": "Startapp.views",
+        "description": "Startapp.views",
+        "isExtraImport": true,
+        "detail": "Startapp.views",
         "documentation": {}
     },
     {
@@ -945,6 +993,24 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "Startapp.migrations.0002_alter_customuser_image",
+        "description": "Startapp.migrations.0002_alter_customuser_image",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('Startapp', '0001_initial'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='customuser',\n            name='image',\n            field=models.ImageField(blank=True, null=True, upload_to='profile_images'),\n        ),",
+        "detail": "Startapp.migrations.0002_alter_customuser_image",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "Startapp.migrations.0003_alter_customuser_email_alter_customuser_image",
+        "description": "Startapp.migrations.0003_alter_customuser_email_alter_customuser_image",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('Startapp', '0002_alter_customuser_image'),\n    ]\n    operations = [\n        migrations.AlterField(\n            model_name='customuser',\n            name='email',\n            field=models.EmailField(max_length=254, unique=True),\n        ),",
+        "detail": "Startapp.migrations.0003_alter_customuser_email_alter_customuser_image",
+        "documentation": {}
+    },
+    {
         "label": "StartappConfig",
         "kind": 6,
         "importPath": "Startapp.apps",
@@ -954,11 +1020,20 @@
         "documentation": {}
     },
     {
+        "label": "CustomUserCreationForm",
+        "kind": 6,
+        "importPath": "Startapp.forms",
+        "description": "Startapp.forms",
+        "peekOfCode": "class CustomUserCreationForm(UserCreationForm):\n    class Meta:\n        model = User\n        fields = ('username', 'email', 'password1', 'password2')\nclass LoginForm(AuthenticationForm):\n    username = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Nombre de usuario'}))\n    password = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Contraseña'}))\nclass UserUpdateForm(forms.ModelForm):\n    class Meta:\n        model = User",
+        "detail": "Startapp.forms",
+        "documentation": {}
+    },
+    {
         "label": "LoginForm",
         "kind": 6,
         "importPath": "Startapp.forms",
         "description": "Startapp.forms",
-        "peekOfCode": "class LoginForm(AuthenticationForm):\n    username = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Nombre de usuario'}))\n    password = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Contraseña'}))\nclass UserUpdateForm(forms.ModelForm):\n    class Meta:\n        model = CustomUser\n        fields = ['username', 'email', 'first_name', 'last_name', 'image']\n    def __init__(self, *args, **kwargs):\n        super(UserUpdateForm, self).__init__(*args, **kwargs)\n        for field in self.fields.values():",
+        "peekOfCode": "class LoginForm(AuthenticationForm):\n    username = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Nombre de usuario'}))\n    password = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Contraseña'}))\nclass UserUpdateForm(forms.ModelForm):\n    class Meta:\n        model = User\n        fields = ['username', 'email', 'first_name', 'last_name', 'image']\n    def __init__(self, *args, **kwargs):\n        super(UserUpdateForm, self).__init__(*args, **kwargs)\n        for field in self.fields.values():",
         "detail": "Startapp.forms",
         "documentation": {}
     },
@@ -967,7 +1042,16 @@
         "kind": 6,
         "importPath": "Startapp.forms",
         "description": "Startapp.forms",
-        "peekOfCode": "class UserUpdateForm(forms.ModelForm):\n    class Meta:\n        model = CustomUser\n        fields = ['username', 'email', 'first_name', 'last_name', 'image']\n    def __init__(self, *args, **kwargs):\n        super(UserUpdateForm, self).__init__(*args, **kwargs)\n        for field in self.fields.values():\n            field.widget.attrs.update({'class': 'form-control'})",
+        "peekOfCode": "class UserUpdateForm(forms.ModelForm):\n    class Meta:\n        model = User\n        fields = ['username', 'email', 'first_name', 'last_name', 'image']\n    def __init__(self, *args, **kwargs):\n        super(UserUpdateForm, self).__init__(*args, **kwargs)\n        for field in self.fields.values():\n            field.widget.attrs.update({'class': 'form-control'})",
+        "detail": "Startapp.forms",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 5,
+        "importPath": "Startapp.forms",
+        "description": "Startapp.forms",
+        "peekOfCode": "User = get_user_model()\nclass CustomUserCreationForm(UserCreationForm):\n    class Meta:\n        model = User\n        fields = ('username', 'email', 'password1', 'password2')\nclass LoginForm(AuthenticationForm):\n    username = forms.CharField(widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Nombre de usuario'}))\n    password = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Contraseña'}))\nclass UserUpdateForm(forms.ModelForm):\n    class Meta:",
         "detail": "Startapp.forms",
         "documentation": {}
     },
@@ -976,7 +1060,7 @@
         "kind": 6,
         "importPath": "Startapp.models",
         "description": "Startapp.models",
-        "peekOfCode": "class CustomUser(AbstractUser):\n    image = models.ImageField( upload_to='profile_images', blank=True, null=True)\n    def __str__(self):\n        return f'{self.username} Profile'",
+        "peekOfCode": "class CustomUser(AbstractUser):\n    email = models.EmailField(unique=True)\n    image = models.ImageField(upload_to='profiles/', null=True, blank=True)\n    def __str__(self):\n        return self.username",
         "detail": "Startapp.models",
         "documentation": {}
     },
@@ -1003,7 +1087,7 @@
         "kind": 6,
         "importPath": "Startapp.views",
         "description": "Startapp.views",
-        "peekOfCode": "class UserView(LoginRequiredMixin, TemplateView):\n    template_name = 'user.html'\n    success_url = reverse_lazy('inicio')  # URL de redirección predeterminada\n    def post(self, request, *args, **kwargs):\n        if 'logout' in request.POST:\n            logout(request)\n            return redirect('inicio')\n        elif 'profile' in request.POST:\n            return redirect('profile')\n        return super().post(request, *args, **kwargs)",
+        "peekOfCode": "class UserView(LoginRequiredMixin, TemplateView):\n    template_name = 'user.html'\n    success_url = reverse_lazy('inicio')\n    def post(self, request, *args, **kwargs):\n        if 'logout' in request.POST:\n            logout(request)\n            return redirect('inicio')\n        elif 'profile' in request.POST:\n            return redirect('profile')\n        return super().post(request, *args, **kwargs)",
         "detail": "Startapp.views",
         "documentation": {}
     },
@@ -1021,7 +1105,7 @@
         "kind": 2,
         "importPath": "Startapp.views",
         "description": "Startapp.views",
-        "peekOfCode": "def logout_view(request):\n    if request.method == \"POST\":\n        logout(request)\n        return redirect('inicio')  \n    return render(request, 'logout.html')\ndef register_view(request):\n    if request.method == \"POST\":\n        form = UserCreationForm(request.POST)\n        if form.is_valid():\n            form.save()",
+        "peekOfCode": "def logout_view(request):\n    if request.method == \"POST\":\n        logout(request)\n        return redirect('inicio')  \n    return render(request, 'logout.html')\ndef register_view(request):\n    if request.method == 'POST':\n        form = CustomUserCreationForm(request.POST)\n        if form.is_valid():\n            form.save()",
         "detail": "Startapp.views",
         "documentation": {}
     },
@@ -1030,7 +1114,7 @@
         "kind": 2,
         "importPath": "Startapp.views",
         "description": "Startapp.views",
-        "peekOfCode": "def register_view(request):\n    if request.method == \"POST\":\n        form = UserCreationForm(request.POST)\n        if form.is_valid():\n            form.save()\n            return redirect('login') \n    else:\n        form = UserCreationForm()\n    return render(request, 'register.html', {'form': form})\nclass NotLoginView(FormView):",
+        "peekOfCode": "def register_view(request):\n    if request.method == 'POST':\n        form = CustomUserCreationForm(request.POST)\n        if form.is_valid():\n            form.save()\n            return redirect('login')\n    else:\n        form = CustomUserCreationForm()\n    return render(request, 'register.html', {'form': form})\nclass NotLoginView(FormView):",
         "detail": "Startapp.views",
         "documentation": {}
     },
@@ -1053,6 +1137,15 @@
         "documentation": {}
     },
     {
+        "label": "User",
+        "kind": 5,
+        "importPath": "Startapp.views",
+        "description": "Startapp.views",
+        "peekOfCode": "User = get_user_model()\ndef login_view(request):\n    if request.method == \"POST\":\n        form = LoginForm(request, data=request.POST)\n        if form.is_valid():\n            username = form.cleaned_data.get('username')\n            password = form.cleaned_data.get('password')\n            user = authenticate(request, username=username, password=password)\n            if user is not None:\n                login(request, user)",
+        "detail": "Startapp.views",
+        "documentation": {}
+    },
+    {
         "label": "application",
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.asgi",
@@ -1066,7 +1159,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "AUTH_USER_MODEL = 'Startapp.CustomUser'\nLOGIN_URL = '/start/not-login/'\n# LOGOUT_URL = '/start/logout/'\n# REGISTER_URL = '/start/register/'\n# UPDATE_PROFILE_URL = '/start/update-profile/'\n# PROFILE_URL = '/start/profile/'\n# NOT_LOGIN_URL= '/start/not-login/'\n# Build paths inside the project like this: BASE_DIR / 'subdir'.\n#BASE_DIR = Path(__file__).resolve().parent.parent\nBASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))",
+        "peekOfCode": "AUTH_USER_MODEL = 'Startapp.CustomUser'\nLOGIN_URL = '/start/not-login/'\n# Build paths inside the project like this: BASE_DIR / 'subdir'.\nBASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-g%3spzpk7oajkztc5h3%gvq)ulh-%+tzm0(=&lfa*f31=j_s9k'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1075,16 +1168,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "LOGIN_URL = '/start/not-login/'\n# LOGOUT_URL = '/start/logout/'\n# REGISTER_URL = '/start/register/'\n# UPDATE_PROFILE_URL = '/start/update-profile/'\n# PROFILE_URL = '/start/profile/'\n# NOT_LOGIN_URL= '/start/not-login/'\n# Build paths inside the project like this: BASE_DIR / 'subdir'.\n#BASE_DIR = Path(__file__).resolve().parent.parent\nBASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))\n# Quick-start development settings - unsuitable for production",
-        "detail": "ultima_entrega_rothamel_esteban.settings",
-        "documentation": {}
-    },
-    {
-        "label": "#BASE_DIR",
-        "kind": 5,
-        "importPath": "ultima_entrega_rothamel_esteban.settings",
-        "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "#BASE_DIR = Path(__file__).resolve().parent.parent\nBASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-g%3spzpk7oajkztc5h3%gvq)ulh-%+tzm0(=&lfa*f31=j_s9k'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition",
+        "peekOfCode": "LOGIN_URL = '/start/not-login/'\n# Build paths inside the project like this: BASE_DIR / 'subdir'.\nBASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-g%3spzpk7oajkztc5h3%gvq)ulh-%+tzm0(=&lfa*f31=j_s9k'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1093,7 +1177,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-g%3spzpk7oajkztc5h3%gvq)ulh-%+tzm0(=&lfa*f31=j_s9k'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\n# Quick-start development settings - unsuitable for production\n# See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/\n# SECURITY WARNING: keep the secret key used in production secret!\nSECRET_KEY = 'django-insecure-g%3spzpk7oajkztc5h3%gvq)ulh-%+tzm0(=&lfa*f31=j_s9k'\n# SECURITY WARNING: don't run with debug turned on in production!\nDEBUG = True\nALLOWED_HOSTS = []\n# Application definition\nINSTALLED_APPS = [",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1147,7 +1231,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "ROOT_URLCONF = 'ultima_entrega_rothamel_esteban.urls'\nWSGI_APPLICATION = 'ultima_entrega_rothamel_esteban.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.0/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME':os.path.join(BASE_DIR,'db.sqlite3')\n    }\n}",
+        "peekOfCode": "ROOT_URLCONF = 'ultima_entrega_rothamel_esteban.urls'\nWSGI_APPLICATION = 'ultima_entrega_rothamel_esteban.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.0/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME':BASE_DIR/'db.sqlite3',\n    }\n}",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1156,7 +1240,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "WSGI_APPLICATION = 'ultima_entrega_rothamel_esteban.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.0/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME':os.path.join(BASE_DIR,'db.sqlite3')\n    }\n}\n# Password validation",
+        "peekOfCode": "WSGI_APPLICATION = 'ultima_entrega_rothamel_esteban.wsgi.application'\n# Database\n# https://docs.djangoproject.com/en/5.0/ref/settings/#databases\nDATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME':BASE_DIR/'db.sqlite3',\n    }\n}\n# Password validation",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1165,7 +1249,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME':os.path.join(BASE_DIR,'db.sqlite3')\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
+        "peekOfCode": "DATABASES = {\n    'default': {\n        'ENGINE': 'django.db.backends.sqlite3',\n        'NAME':BASE_DIR/'db.sqlite3',\n    }\n}\n# Password validation\n# https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators\nAUTH_PASSWORD_VALIDATORS = [\n    {",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1183,7 +1267,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'es'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR ,'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/')]#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/']\n# Default primary key field type",
+        "peekOfCode": "LANGUAGE_CODE = 'es'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [BASE_DIR /str('static'),]\n# Default primary key field type",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1192,7 +1276,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR ,'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/')]#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/']\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [BASE_DIR /str('static'),]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1201,7 +1285,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR ,'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/')]#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/']\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [BASE_DIR /str('static'),]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1210,7 +1294,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR ,'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/')]#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/']\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Media files (Uploaded files)",
+        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [BASE_DIR /str('static'),]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Media files (Uploaded files)",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1219,7 +1303,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = 'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR ,'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/')]#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/']\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Media files (Uploaded files)\nMEDIA_URL ='/media/'# 'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/media/'",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [BASE_DIR /str('static'),]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Media files (Uploaded files)\nMEDIA_URL ='/media/'",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1228,7 +1312,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "STATIC_URL = 'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/'\nSTATICFILES_DIRS = [os.path.join(BASE_DIR ,'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/')]#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/']\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Media files (Uploaded files)\nMEDIA_URL ='/media/'# 'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Templates\nTEMPLATES = [",
+        "peekOfCode": "STATIC_URL = '/static/'\nSTATICFILES_DIRS = [BASE_DIR /str('static'),]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Media files (Uploaded files)\nMEDIA_URL ='/media/'\nMEDIA_ROOT = BASE_DIR /str('media')\n# Templates\nTEMPLATES = [",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1237,7 +1321,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "STATICFILES_DIRS = [os.path.join(BASE_DIR ,'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/')]#'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/AppProyectoFinal/static/']\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Media files (Uploaded files)\nMEDIA_URL ='/media/'# 'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Templates\nTEMPLATES = [\n    {",
+        "peekOfCode": "STATICFILES_DIRS = [BASE_DIR /str('static'),]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Media files (Uploaded files)\nMEDIA_URL ='/media/'\nMEDIA_ROOT = BASE_DIR /str('media')\n# Templates\nTEMPLATES = [\n    {",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1246,7 +1330,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Media files (Uploaded files)\nMEDIA_URL ='/media/'# 'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/media/'\nMEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Templates\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR ,'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/ultima_entrega_rothamel_esteban/templates'],\n        'APP_DIRS': True,",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Media files (Uploaded files)\nMEDIA_URL ='/media/'\nMEDIA_ROOT = BASE_DIR /str('media')\n# Templates\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [\"BASE_DIR/'templates'\" ],\n        'APP_DIRS': True,",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1255,7 +1339,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "MEDIA_ROOT = os.path.join(BASE_DIR, 'media')\n# Templates\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR ,'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/ultima_entrega_rothamel_esteban/templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',",
+        "peekOfCode": "MEDIA_ROOT = BASE_DIR /str('media')\n# Templates\nTEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [\"BASE_DIR/'templates'\" ],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1264,7 +1348,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [BASE_DIR ,'C:/Users/Usuario/Desktop/curso_python_clases/entregas/ProyectoFInalRothamel/ultima_entrega_rothamel_esteban/templates'],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
+        "peekOfCode": "TEMPLATES = [\n    {\n        'BACKEND': 'django.template.backends.django.DjangoTemplates',\n        'DIRS': [\"BASE_DIR/'templates'\" ],\n        'APP_DIRS': True,\n        'OPTIONS': {\n            'context_processors': [\n                'django.template.context_processors.debug',\n                'django.template.context_processors.request',\n                'django.contrib.auth.context_processors.auth',",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },

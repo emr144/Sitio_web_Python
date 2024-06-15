@@ -1,15 +1,16 @@
-
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
-from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from django.views.generic import FormView
 from django.urls import reverse_lazy
-from .forms import LoginForm, UserUpdateForm
-from .models import CustomUser  # Asegúrate de importar CustomUser desde tu aplicación
+from django.views.generic import FormView, TemplateView
+from django.contrib.auth import get_user_model
+from .forms import LoginForm, UserUpdateForm, CustomUserCreationForm
 from django.contrib.auth.mixins import LoginRequiredMixin 
-from django.views.generic import TemplateView
+from django.contrib.auth.forms import AuthenticationForm
+
+
+User = get_user_model()
 
 def login_view(request):
     if request.method == "POST":
@@ -22,7 +23,6 @@ def login_view(request):
                 login(request, user)
                 return redirect('inicio')  
         else:
-            # Handle invalid login
             messages.error(request, "Usuario o contraseña incorrectos.")
     else:
         form = LoginForm()
@@ -35,13 +35,13 @@ def logout_view(request):
     return render(request, 'logout.html')
 
 def register_view(request):
-    if request.method == "POST":
-        form = UserCreationForm(request.POST)
+    if request.method == 'POST':
+        form = CustomUserCreationForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('login') 
+            return redirect('login')
     else:
-        form = UserCreationForm()
+        form = CustomUserCreationForm()
     return render(request, 'register.html', {'form': form})
 
 class NotLoginView(FormView):
@@ -57,13 +57,12 @@ class NotLoginView(FormView):
             login(self.request, user)
             return super().form_valid(form)
         else:
-            # Handle invalid login
             messages.error(self.request, "Usuario o contraseña incorrectos.")
             return self.form_invalid(form)
 
 class UserView(LoginRequiredMixin, TemplateView):
     template_name = 'user.html'
-    success_url = reverse_lazy('inicio')  # URL de redirección predeterminada
+    success_url = reverse_lazy('inicio')
 
     def post(self, request, *args, **kwargs):
         if 'logout' in request.POST:
