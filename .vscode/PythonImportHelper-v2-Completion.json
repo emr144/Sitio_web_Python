@@ -1267,7 +1267,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "LANGUAGE_CODE = 'es'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [BASE_DIR /str('static'),]\n# Default primary key field type",
+        "peekOfCode": "LANGUAGE_CODE = 'es'\nTIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/AppProyectoFinal/static/'\nSTATICFILES_DIRS = [BASE_DIR /str('static'),]\n# Default primary key field type",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1276,7 +1276,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [BASE_DIR /str('static'),]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field",
+        "peekOfCode": "TIME_ZONE = 'UTC'\nUSE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/AppProyectoFinal/static/'\nSTATICFILES_DIRS = [BASE_DIR /str('static'),]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1285,7 +1285,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [BASE_DIR /str('static'),]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
+        "peekOfCode": "USE_I18N = True\nUSE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/AppProyectoFinal/static/'\nSTATICFILES_DIRS = [BASE_DIR /str('static'),]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1294,7 +1294,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [BASE_DIR /str('static'),]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Media files (Uploaded files)",
+        "peekOfCode": "USE_L10N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/AppProyectoFinal/static/'\nSTATICFILES_DIRS = [BASE_DIR /str('static'),]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Media files (Uploaded files)",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1303,7 +1303,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/static/'\nSTATICFILES_DIRS = [BASE_DIR /str('static'),]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Media files (Uploaded files)\nMEDIA_URL ='/media/'",
+        "peekOfCode": "USE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATIC_URL = '/AppProyectoFinal/static/'\nSTATICFILES_DIRS = [BASE_DIR /str('static'),]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Media files (Uploaded files)\nMEDIA_URL ='/media/'",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
@@ -1312,7 +1312,7 @@
         "kind": 5,
         "importPath": "ultima_entrega_rothamel_esteban.settings",
         "description": "ultima_entrega_rothamel_esteban.settings",
-        "peekOfCode": "STATIC_URL = '/static/'\nSTATICFILES_DIRS = [BASE_DIR /str('static'),]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Media files (Uploaded files)\nMEDIA_URL ='/media/'\nMEDIA_ROOT = BASE_DIR /str('media')\n# Templates\nTEMPLATES = [",
+        "peekOfCode": "STATIC_URL = '/AppProyectoFinal/static/'\nSTATICFILES_DIRS = [BASE_DIR /str('static'),]\n# Default primary key field type\n# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field\nDEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'\n# Media files (Uploaded files)\nMEDIA_URL ='/media/'\nMEDIA_ROOT = BASE_DIR /str('media')\n# Templates\nTEMPLATES = [",
         "detail": "ultima_entrega_rothamel_esteban.settings",
         "documentation": {}
     },
