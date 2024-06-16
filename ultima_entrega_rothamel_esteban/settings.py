@@ -32,6 +32,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'AppProyectoFinal',
     'Startapp',
+    'chatapp',
+    'channels',
 ]
 
 MIDDLEWARE = [
@@ -98,6 +100,8 @@ USE_TZ = True
 
 STATIC_URL = '/AppProyectoFinal/static/'
 STATICFILES_DIRS = [BASE_DIR /str('static'),]
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
@@ -132,3 +136,11 @@ TEMPLATES = [
 
 
 
+
+ASGI_APPLICATION = 'ultima_entrega_rothamel_esteban.routing.application'
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels.layers.InMemoryChannelLayer',  # Usar Redis en producción
+    },
+}

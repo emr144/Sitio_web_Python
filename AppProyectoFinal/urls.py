@@ -4,7 +4,7 @@ from AppProyectoFinal.views import ClienteList, ClienteDetail, ClienteCreate, Cl
 from AppProyectoFinal.views import EmpleadoList, EmpleadoDetail, EmpleadoCreate, EmpleadoUpdate ,EmpleadoDelete
 from AppProyectoFinal.views import ProveedorList, ProveedorDetail, ProveedorCreate, ProveedorUpdate ,ProveedorDelete
 from AppProyectoFinal.views import buscar, ingresar
-
+from . import views
 
 
 
@@ -35,5 +35,7 @@ urlpatterns = [
     path('proveedor-crea/', ProveedorCreate.as_view(), name='CreaProveedor'),
     path('proveedor-actualiza/<pk>/', ProveedorUpdate.as_view(), name='ActualizaProveedor'),
     path('proveedor-elimina/<pk>/', ProveedorDelete.as_view(), name='EliminaProveedor'),
+
+    
 
        ]
