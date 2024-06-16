@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #ebacac; /* Color de fondo predeterminado */
+            background-color: #5871ef; /* Color de fondo predeterminado */
             margin: 0;
             padding: 0;
             display: flex;
@@ -117,22 +117,38 @@
 <body>
     <!-- Color selector -->
     <div class="color-selector">
-        <label data-color="#ebacac" style="background-color: #ebacac;"></label>
-        <label data-color="#c0e1a7" style="background-color: #c0e1a7;"></label>
-        <label data-color="#a7cee1" style="background-color: #a7cee1;"></label>
-        <label data-color="#e1a7ce" style="background-color: #e1a7ce;"></label>
+        <label data-color="#ebacac" style="background-color: #f35555;"></label>
+        <label data-color="#c0e1a7" style="background-color: #aff17b;"></label>
+        <label data-color="#a7cee1" style="background-color: #67c2f0;"></label>
+        <label data-color="#e1a7ce" style="background-color: #ef5ebf;"></label>
     </div>
 
     <div id="chat-container">
-        <div id="chat"></div>
-        <form>
-            <input type="text" id="username" placeholder="Username" required>
-            <input type="text" id="message" placeholder="Message" required>
+        <div id="chat">
+            {% for message in messages %}
+                <div>
+                    <strong>{{ message.username }}</strong>: {{ message.content }} <span>{{ message.timestamp }}</span>
+                </div>
+            {% endfor %}
+        </div>
+        <form method="post">
+            {% csrf_token %}
+            <input type="text" id="message" name="content" placeholder="Message" required>
             <button type="submit">Send</button>
         </form>
     </div>
 
     <!-- Home button -->
     <a href="http://127.0.0.1:8000/app/inicio/" class="home-button">Ir a Inicio</a>
+
+    <script>
+        // Script to change background color
+        document.querySelectorAll('.color-selector label').forEach(label => {
+            label.addEventListener('click', function() {
+                const color = this.getAttribute('data-color');
+                document.body.style.backgroundColor = color;
+            });
+        });
+    </script>
 </body>
 </html>

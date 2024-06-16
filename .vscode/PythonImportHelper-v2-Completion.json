@@ -72,6 +72,30 @@
         "documentation": {}
     },
     {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
@@ -173,6 +197,14 @@
         "description": "django.apps",
         "isExtraImport": true,
         "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
         "documentation": {}
     },
     {
@@ -464,6 +496,14 @@
         "documentation": {}
     },
     {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "render",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
@@ -577,6 +617,22 @@
         "documentation": {}
     },
     {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "login_required",
+        "importPath": "django.contrib.auth.decorators",
+        "description": "django.contrib.auth.decorators",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.decorators",
+        "documentation": {}
+    },
+    {
         "label": "django.contrib.auth.models",
         "kind": 6,
         "isExtraImport": true,
@@ -681,14 +737,6 @@
         "description": "Startapp.views",
         "isExtraImport": true,
         "detail": "Startapp.views",
-        "documentation": {}
-    },
-    {
-        "label": "login_required",
-        "importPath": "django.contrib.auth.decorators",
-        "description": "django.contrib.auth.decorators",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.decorators",
         "documentation": {}
     },
     {
@@ -1106,6 +1154,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "chatapp.migrations.0002_message_delete_mensaje",
+        "description": "chatapp.migrations.0002_message_delete_mensaje",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('chatapp', '0001_initial'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Message',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('username', models.CharField(max_length=100)),",
+        "detail": "chatapp.migrations.0002_message_delete_mensaje",
+        "documentation": {}
+    },
+    {
         "label": "ChatappConfig",
         "kind": 6,
         "importPath": "chatapp.apps",
@@ -1124,6 +1181,24 @@
         "documentation": {}
     },
     {
+        "label": "MessageForm",
+        "kind": 6,
+        "importPath": "chatapp.forms",
+        "description": "chatapp.forms",
+        "peekOfCode": "class MessageForm(forms.ModelForm):\n    class Meta:\n        model = Message\n        fields = ['content']\n        widgets = {\n            'content': forms.TextInput(attrs={'placeholder': 'Message', 'id': 'message'}),\n        }",
+        "detail": "chatapp.forms",
+        "documentation": {}
+    },
+    {
+        "label": "Message",
+        "kind": 6,
+        "importPath": "chatapp.models",
+        "description": "chatapp.models",
+        "peekOfCode": "class Message(models.Model):\n    username = models.CharField(max_length=100)\n    content = models.TextField()\n    timestamp = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return f'{self.username}: {self.content[:20]}...'",
+        "detail": "chatapp.models",
+        "documentation": {}
+    },
+    {
         "label": "urlpatterns",
         "kind": 5,
         "importPath": "chatapp.urls",
@@ -1137,7 +1212,7 @@
         "kind": 2,
         "importPath": "chatapp.views",
         "description": "chatapp.views",
-        "peekOfCode": "def index(request):\n    return render(request, 'chat.html')",
+        "peekOfCode": "def index(request):\n    if request.method == 'POST':\n        form = MessageForm(request.POST)\n        if form.is_valid():\n            message = form.save(commit=False)\n            message.username = request.user.username\n            message.save()\n            return redirect('chat')\n    else:\n        form = MessageForm()",
         "detail": "chatapp.views",
         "documentation": {}
     },
