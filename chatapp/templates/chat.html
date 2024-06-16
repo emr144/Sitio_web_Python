@@ -15,6 +15,7 @@
             height: 100vh;
             justify-content: center;
             align-items: center;
+            position: relative; /* Para posicionamiento del botón */
         }
         #chat-container {
             width: 80%;
@@ -94,29 +95,24 @@
         .color-selector label:hover {
             border-color: #333;
         }
+        .home-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+        .home-button:hover {
+            background-color: #0056b3;
+        }
     </style>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            // Function to set background color
-            function setBackgroundColor(color) {
-                $('body').css('background-color', color);
-                localStorage.setItem('chatBackgroundColor', color);
-            }
-
-            // Load saved background color or set default
-            var savedColor = localStorage.getItem('chatBackgroundColor');
-            if (savedColor) {
-                $('body').css('background-color', savedColor);
-            }
-
-            // Event listener for color selector
-            $('.color-selector label').click(function() {
-                var color = $(this).attr('data-color');
-                setBackgroundColor(color);
-            });
-        });
-    </script>
 </head>
 <body>
     <!-- Color selector -->
@@ -135,5 +131,8 @@
             <button type="submit">Send</button>
         </form>
     </div>
+
+    <!-- Home button -->
+    <a href="http://127.0.0.1:8000/app/inicio/" class="home-button">Ir a Inicio</a>
 </body>
 </html>
